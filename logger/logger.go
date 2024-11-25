@@ -39,7 +39,7 @@ func InitLogger() {
 	onOpenSearchEnv, exists := os.LookupEnv("LOG_ON_OPEN_SEARCH")
 	onOpenSearch, _ := strconv.ParseBool(onOpenSearchEnv)
 	if exists && onOpenSearch {
-		createOpenSearchIndex(os.Getenv("OPEN_SEARCH_ENDPOINT"), os.Getenv("INDEX_NAME"))
+		createOpenSearchIndex(os.Getenv("OPEN_SEARCH_ENDPOINT"), os.Getenv("OPEN_SEARCH_INDEX_NAME"))
 		cores = append(cores, openSearchLoggercore())
 	}
 

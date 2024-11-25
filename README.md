@@ -8,4 +8,4 @@
 | LOG_FILE_PATH | File path used for logging | ./app.log | 
 | LOG_ON_OPEN_SEARCH | Enable logging on OpenSearch | false |
 | OPEN_SEARCH_ENDPOINT | Endpoint to OpenSearch | / |
-| INDEX_NAME | Name of OpenSearch Index | / |
+| OPEN_SEARCH_OPEN_SEARCH_INDEX_NAME | Name of OpenSearch Index | / |

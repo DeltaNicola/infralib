@@ -47,7 +47,7 @@ func (w *OpenSearchWriter) Write(p []byte) (n int, err error) {
 }
 
 func openSearchLoggercore() zapcore.Core {
-	writer := NewOpenSearchWriter(fmt.Sprintf("%s/%s/_doc", os.Getenv("OPEN_SEARCH_ENDPOINT"), os.Getenv("INDEX_NAME")))
+	writer := NewOpenSearchWriter(fmt.Sprintf("%s/%s/_doc", os.Getenv("OPEN_SEARCH_ENDPOINT"), os.Getenv("OPEN_SEARCH_INDEX_NAME")))
 
 	return zapcore.NewCore(
 		zapcore.NewJSONEncoder(encoderConfig),
